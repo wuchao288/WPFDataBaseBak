@@ -33,6 +33,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="50"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
         </Grid.RowDefinitions>
         <StackPanel VerticalAlignment="Top" Grid.Row="0"
   Orientation="Horizontal"
@@ -88,5 +89,22 @@
                 </GridView>
             </ListView.View>
         </ListView>
+        <DockPanel  Grid.Row="2" LastChildFill="False" >
+
+
+            <Button DockPanel.Dock="Right" FontSize="12" Click="Button_AddDataBase" Padding="0"  Height="24" Width="70" Margin="10,0,10,0" Style="{StaticResource MaterialDesignOutlinedButton}">
+                <StackPanel Orientation="Horizontal">
+                    <materialDesign:PackIcon FontSize="12"  Kind="AddCircleOutline" />
+                    <TextBlock Margin="8 0 0 0" FontSize="12"  VerticalAlignment="Center">添加</TextBlock>
+                </StackPanel>
+            </Button>
+            <Button  DockPanel.Dock="Right" FontSize="12"   Padding="0"  Height="24"  Width="70"  Margin="10,0,10,0" Style="{StaticResource MaterialDesignOutlinedButton}">
+                <StackPanel Orientation="Horizontal">
+                    <materialDesign:PackIcon Kind="Reload" FontSize="12"/>
+                    <TextBlock Margin="8 0 0 0" FontSize="12"  VerticalAlignment="Center">刷新</TextBlock>
+                </StackPanel>
+            </Button>
+
+        </DockPanel>
     </Grid>
 </Page>

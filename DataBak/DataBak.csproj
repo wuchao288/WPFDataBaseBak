@@ -55,12 +55,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BaseWin.xaml.cs">
+      <DependentUpon>BaseWin.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Convert\ConvertIntToString.cs" />
     <Compile Include="Convert\StarWidthConverter.cs" />
     <Compile Include="Model\DataBaseInfo.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\PageDataBaseModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
+    <Compile Include="View\BasePage.xaml.cs">
+      <DependentUpon>BasePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\PageDataBase.xaml.cs">
       <DependentUpon>PageDataBase.xaml</DependentUpon>
     </Compile>
@@ -82,6 +88,10 @@
     <Compile Include="View\PageTool.xaml.cs">
       <DependentUpon>PageTool.xaml</DependentUpon>
     </Compile>
+    <Page Include="BaseWin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -94,6 +104,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="View\BasePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\PageDataBase.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

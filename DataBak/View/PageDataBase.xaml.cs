@@ -22,6 +22,7 @@ namespace DataBak.View
     /// </summary>
     public partial class PageDataBase : Page
     {
+       
         public PageDataBase()
         {
             InitializeComponent();
@@ -44,6 +45,16 @@ namespace DataBak.View
                 Server = "."
             });
             this.DataContext = model;
+        
+        }
+
+        private void Button_AddDataBase(object sender, RoutedEventArgs e)
+        {
+
+            BaseWin basePage = new BaseWin();
+            basePage.Show();
+
+
         }
     }
 }

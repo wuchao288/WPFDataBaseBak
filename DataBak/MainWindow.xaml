@@ -10,6 +10,10 @@
         Title="MainWindow" Height="600" Width="980"
     Background="Transparent" WindowStartupLocation="CenterScreen" 
           AllowsTransparency="True"     WindowStyle="None"  BorderThickness="14">
+    <Window.Effect>
+        <DropShadowEffect BlurRadius="14" Color="#FF858484" Direction="90" ShadowDepth="3" Opacity="0.8"/>
+    </Window.Effect>
+    
     <Window.DataContext>
         <vm:MainViewModel x:Name="mainViewModel" />
     </Window.DataContext>
@@ -45,9 +49,7 @@
     </Window.Resources>
 
 
-    <Window.Effect>
-        <DropShadowEffect BlurRadius="14" Color="#FF858484" Direction="90" ShadowDepth="3" Opacity="0.8"/>
-    </Window.Effect>
+
     <Grid Background="White">
 
         <Grid.RowDefinitions>
