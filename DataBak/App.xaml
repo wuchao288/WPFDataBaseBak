@@ -21,13 +21,18 @@
                     <!--外边框-->
                     <Border Width="Auto" Height="Auto" DockPanel.Dock="Top"
                     Background="#FF7097D0" CornerRadius="4,4,0,0" x:Name="borderTitle">
-                        <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
-                            <!--最小化按钮-->
-                            <Button Content="Min" x:Name="btnMin" />
-                            <!--最大化按钮-->
-                            <Button Content="Max" x:Name="btnMax" />
-                            <!--关闭按钮-->
-                            <Button Content="Close" x:Name="btnClose" />
+                        <StackPanel Orientation="Horizontal" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Bottom"  >
+                            <Button Padding="0" VerticalAlignment="Bottom" Width="40" Height="40"     HorizontalAlignment="Center" Style="{StaticResource MaterialDesignFlatButton}" >
+                                <TextBlock Text="&#xe693;" FontSize="14" Foreground="White"  FontFamily="/font/#iconfont"/>
+                            </Button>
+                            <Button Padding="0" VerticalAlignment="Bottom" Width="40"   Height="40" HorizontalAlignment="Center" Style="{StaticResource MaterialDesignFlatButton}" >
+                                <TextBlock Text="&#xe690;" FontSize="14" Foreground="White"  FontFamily="/font/#iconfont"/>
+                            </Button>
+                            <Button Padding="0" VerticalAlignment="Bottom" Width="40" Height="40"    HorizontalAlignment="Center" Style="{StaticResource MaterialDesignFlatButton}" >
+                                <TextBlock Text="&#xe61d;" FontSize="14"  Foreground="White"  FontFamily="/font/#iconfont"/>
+
+                            </Button>
+
                         </StackPanel>
                     </Border>
                     <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}"
